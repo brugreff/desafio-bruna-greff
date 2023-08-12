@@ -19,6 +19,7 @@ class CaixaDaLanchonete {
         'credito' : 1.03
     };
 
+    // Objeto literal que armazena a compra na execução
     compra = {};
 
     calcularValorDaCompra(metodoDePagamento, itens) {
