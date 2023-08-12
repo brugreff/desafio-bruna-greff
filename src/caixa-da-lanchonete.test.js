@@ -49,7 +49,7 @@ describe('CaixaDaLanchonete', () => {
     ])('compra %p em %p deve resultar em %p', (_, formaDePagamento, resultadoEsperado, itens) =>
         validaTeste(formaDePagamento, resultadoEsperado, itens));
 
-    // Testando combos com itens extras 
+    // Testando combos com itens extras
      test.each([
         ['chantily com outro item', 'credito', 'Item extra não pode ser pedido sem o principal', ['chantily,1', 'combo1,1']],
         ['queijo com outro item', 'debito', 'Item extra não pode ser pedido sem o principal', ['combo2,1', 'queijo,1']],

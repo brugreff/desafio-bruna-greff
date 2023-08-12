@@ -27,8 +27,8 @@ class CaixaDaLanchonete {
         // Iniciando valor da compra
         let valorTotal = 0; 
 
-        // Checando se o array é um array e, caso seja, se é um array não vazio
-        if (Array.isArray(itens) && itens.length === 0){
+        // Checando se é um array não vazio
+        if (itens.length === 0){
             return 'Não há itens no carrinho de compra!'
         }
 
@@ -42,7 +42,7 @@ class CaixaDaLanchonete {
             if (!this.cardapio[codigo]) {
                 return 'Item inválido!';
             }
-            if (quantidade <= 0) {
+            if (quantidade === 0) {
                 return 'Quantidade inválida!';
             }
 
